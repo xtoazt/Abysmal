@@ -1,0 +1,45 @@
+.theme-dark {
+    --accent: #4a86e8;
+    --accent-hover: #3a76d8;
+    --accent-text: #ffffff;
+  
+    --bg-main: #121212;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+  
+    --header-bg: #1a1a1a;
+    --header-text: #ffffff;
+  
+    --tab-bg: #252525;
+    --tab-text: #cccccc;
+    --tab-active-bg: #333333;
+    --tab-active-text: #4a86e8;
+    --tab-close-hover: rgba(255, 255, 255, 0.2);
+  
+    --toolbar-bg: #1e1e1e;
+    --toolbar-btn: #cccccc;
+    --toolbar-btn-hover-bg: #333333;
+    --toolbar-btn-hover-text: #ffffff;
+  
+    --modal-bg: #1a1a1a;
+    --modal-header-text: #ffffff;
+    --modal-close-btn: #cccccc;
+  
+    --input-bg: #2a2a2a;
+    --input-text: #ffffff;
+    --border-color: #333333;
+  
+    --btn-text: #cccccc;
+    --btn-hover-bg: #333333;
+    --btn-hover-text: #ffffff;
+  
+    --bookmark-hover-bg: #252525;
+  
+    --chat-received-bg: #2a2a2a;
+    --chat-received-text: #ffffff;
+  
+    --shortcut-hover-bg: #252525;
+    --shortcut-icon-bg: #2a2a2a;
+    --shortcut-icon-text: #4a86e8;
+  }
+  
