@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abysmal - Web Proxy</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/themes/default.css" id="theme-stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.ico">
+</head>
+<body class="theme-rainbow-black">
+  <div id="app">
+    <header id="main-header">
+      <div class="logo">Abysmal</div>
+      <div id="tab-bar">
+        <div id="tabs-container"></div>
+        <button id="new-tab-btn" title="New Tab"><i class="fa-solid fa-plus"></i></button>
+      </div>
+      <div id="user-controls">
+        <button id="settings-btn" title="Settings"><i class="fa-solid fa-gear"></i></button>
+        <button id="bookmarks-btn" title="Bookmarks"><i class="fa-solid fa-bookmark"></i></button>
+        <div id="user-section">
+          <button id="login-btn" class="login-btn">Login</button>
+          <div id="user-profile" class="hidden">
+            <img src="/img/default-avatar.png" alt="User" id="user-avatar">
+            <span id="username">Guest</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="browser-container">
+        
+      </div>
+
+      
+      <div id="settings-modal" class="modal hidden">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Settings</h2>
+            <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="modal-body">
+            
+          </div>
+        </div>
+      </div>
+
+      <div id="bookmarks-modal" class="modal hidden">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Bookmarks</h2>
+            <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="modal-body">
+            <div id="bookmarks-container">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="login-modal" class="modal hidden">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Login</h2>
+            <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="modal-body">
+            <form id="login-form">
+              <div class="form-group">
+                <label for="username-input">Username</label>
+                <input type="text" id="username-input" required>
+              </div>
+              <div class="form-group">
+                <label for="password-input">Password</label>
+                <input type="password" id="password-input" required>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="primary-btn">Login</button>
+                <button type="button" id="register-toggle" class="secondary-btn">Register</button>
+              </div>
+            </form>
+            <form id="register-form" class="hidden">
+              <div class="form-group">
+                <label for="register-username">Username</label>
+                <input type="text" id="register-username" required>
+              </div>
+              <div class="form-group">
+                <label for="register-password">Password</label>
+                <input type="password" id="register-password" required>
+              </div>
+              <div class="form-group">
+                <label for="register-confirm-password">Confirm Password</label>
+                <input type="password" id="register-confirm-password" required>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="primary-btn">Register</button>
+                <button type="button" id="login-toggle" class="secondary-btn">Back to Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div id="chat-container" class="hidden">
+        <div id="chat-header">
+          <h3><i class="fa-solid fa-comments"></i>Chat</h3>
+          <button id="close-chat-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="chat-messages"></div>
+        <div id="chat-input-container">
+          <input type="text" id="chat-input" placeholder="Type a message...">
+          <button id="send-chat-btn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="/js/main.js"></script>
+  <script type="module" src="/js/browser.js"></script>
+  <script type="module" src="/js/user-chat.js"></script>
+  <script type="module" src="/js/adblocker.js"></script>
+  <script type="module" src="/js/extensions.js"></script>
+</body>
+</html>
